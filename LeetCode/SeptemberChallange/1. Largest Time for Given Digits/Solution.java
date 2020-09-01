@@ -35,7 +35,7 @@ class Solution {
     
     //Find all the permutations. // Will permute using visited array
     //validate time in permutation
-    //Add return list
+    //Add return max time
     
     public String largestTimeFromDigits(int[] A) {
         
@@ -102,14 +102,14 @@ class Solution {
             
             if(visited[i]==true) continue;
             
-            //add current i value of into list of Interger at a level of tree.       
+            //add current i value of into list of Interger at a level of  recursion tree.       
             curr.add(nums[i]);
             visited[i]=true;
             
             // permutate on current i value.
             permutation(res,nums,curr,visited);
             
-            //backtrack. Undo your chnages.
+            //backtrack. Undo your changes.
             visited[i]=false;
             curr.remove(curr.size()-1); // remove last from current array list for next possible permutation.     
         }

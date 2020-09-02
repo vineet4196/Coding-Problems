@@ -41,7 +41,8 @@ class Solution {
                 return true;
             }
             
-            /** ceiling  used to return the least element in this set greater than or equal to the given                       element,or null if there is no such element i.e it will return first greater value
+            /** ceiling  used to return the least element in this set greater than or equal to the given 
+            element,or null if there is no such element i.e it will return first greater value
             than element or null other wise**/
             
             if(ts.ceiling(c) !=null && c>=ts.ceiling(c)-t) {
